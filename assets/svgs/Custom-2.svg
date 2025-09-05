@@ -1,0 +1,47 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 100"
+  width="200"
+  height="100"
+>
+  <!-- Infinity symbol for animation -->
+  <path
+    id="infinityPath"
+    d="
+      M 40,50
+      C 40,20 90,20 100,50
+      C 110,80 160,80 160,50
+      C 160,20 110,20 100,50
+      C 90,80 40,80 40,50
+      "
+    fill="none"
+    stroke="black"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <!-- Animated red energy pulse -->
+  <path
+    id="infinityStreak"
+    d="
+      M 40,50
+      C 40,20 90,20 100,50
+      C 110,80 160,80 160,50
+      C 160,20 110,20 100,50
+      C 90,80 40,80 40,50
+      "
+    fill="none"
+    stroke="red"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-dasharray="40 280"
+    stroke-dashoffset="320"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      from="320"
+      to="0"
+      dur="2s"
+      repeatCount="indefinite"
+    />
+  </path>
+</svg>
